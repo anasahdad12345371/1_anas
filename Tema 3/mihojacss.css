@@ -1,0 +1,30 @@
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px;
+    }
+
+    h1 {
+      color:turquoise;
+    }
+    h2{
+    color:purple
+    }
+
+   span{font-weight: bold}
+
+    .verde {
+      color:green;
+      font-weight: bold;
+    }
+    .azul{
+      color: blue
+    }
+    .mayus {
+      text-transform: uppercase;
+      color:gray
+    }
+
+    .rojo {
+      color: red;
+      font-weight: bold;
+    }
