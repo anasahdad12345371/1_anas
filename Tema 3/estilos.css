@@ -1,0 +1,73 @@
+body {
+    background-color:white;
+    text-align: center;
+}
+span {
+    visibility: hidden;
+    display: block;
+}
+
+td:hover > span {
+   visibility: visible;
+}
+
+caption {
+    background-color:purple;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    padding: 8px;
+    border: 5px outset whitesmoke;
+}
+
+.sor { background-color: violet; }
+.servred { background-color: orange; }
+.apweb{ background-color: gold;}
+.seguridad { background-color: pink; }
+.emple{ background-color: aqua;}
+.python{ background-color:khaki ;}
+.ingles{background-color: deepskyblue;}
+.digi{ background-color: yellowgreen;}
+.soste{ background-color: lightsalmon;}
+th {
+    background-color: skyblue;
+    color: white;
+}
+
+.apweb span{
+    visibility: hidden;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.apweb:hover span{
+    visibility: visible;
+    background-color: palegreen;
+}
+
+td:first-child {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+
+thead > tr:first-child > th:first-child {
+    background-color:white;
+    border: none;
+}
+.recreo {
+    background-color:yellow;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
