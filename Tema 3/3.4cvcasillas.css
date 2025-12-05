@@ -76,7 +76,7 @@ ul.job-description {
     list-style-type: none;
 }
 
-.knowledge div ul>li:before {
+.knowledge div ul li:before {
     content: "►";
     padding-right: 0.5em;
     color: turquoise;
