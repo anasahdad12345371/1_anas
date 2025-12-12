@@ -8,14 +8,35 @@
         body {
             padding: 15px;
         }
+
+        #mensajes{
+            min-height: 100px;
+            width: 150px;
+            background-color: pink;
+        }
     </style>
-    <script src="prueba1.js"></script>
+    <script src="Prueba.js"></script>
 
 </head>
 
 <body>
     <!-- comentario en HTML -->
     <h1>prueba</h1>
+
+    <form>
+        <label>Nombre: </label>
+        <input id="nombre" name="nombre">
+        <br>
+        <label>Contraseña: </label>
+        <input type="password" id="pass1" name="pass">
+        <br>
+        <label>Repita la contraseña: </label>
+        <input type="password" id="pass2" name="pass2">
+        <br>
+    </form>
+    <button onclick="enviarFormulario()">Enviar</button>
+
+    <div id="mensajes" onmouseenter="cambiaColor('yellow')" onmouseleave="cambiaColor('pink')"> </div>
 
 </body>
 
