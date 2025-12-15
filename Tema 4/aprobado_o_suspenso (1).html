@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #resultado {
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Nota primera evaluaci&oacute;n</label>
+      <input type="number" max="10" id="nota_primera_ev" />
+      <label>Nota segunda evaluaci&oacute;n</label>
+      <input type="number" max="10" id="nota_segunda_ev" />
+    </form>
+    <!-- TODO: hacer que al pulsar el botón se calcule la nota final y se pinte el div con el texto y color adecuados -->
+    <button type="button" onclick="calcularNotaFinal()">Calcular nota</button>
+    <div id="resultado"></div>
+    <script>
+      var boton = document.getElementById("boton_calcular");
+      var divResultado = document.getElementById("resultado");
+
+      function calcularNotaFinal() {
+        var notaPrimeraEv = document.getElementById("nota_primera_ev").value;
+        var notaSegundaEv = document.getElementById("nota_segunda_ev").value;
+
+        var notaFinal =
+          (parseFloat(notaPrimeraEv) + parseFloat(notaSegundaEv)) / 2;
+
+        if (notaFinal >= 5) {
+          divResultado.innerHTML = "APROBADO :)";
+          divResultado.style.backgroundColor = "green";
+        } else {
+          divResultado.innerHTML = "VUELVE A INTENTARLO :(";
+          divResultado.style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
